@@ -16,7 +16,7 @@ class DateConverter {
             //        "2020-01-21T06:17:30Z"
                     dateFormatter.dateFormat = "yyyy-MM-dd'T'HH-mm-ss'Z'"
                     let date = dateFormatter.date(from: dateString)
-                    dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+                    dateFormatter.dateFormat = "dd.MM.yyyy HH:mm"
                     let dateConverted = dateFormatter.string(from: date!)
                     return dateConverted
         }else {return "date"}
